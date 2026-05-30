@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <!-- ================================================== -->
+  <!-- META & SEO                                          -->
+  <!-- ================================================== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Website Profil Desa Bojanegara - Desa Modern Mandiri Berdaya" />
+  <title>Desa Bojanegara — Profil Desa Mandiri</title>
+
+  <!-- ================================================== -->
+  <!-- GOOGLE FONTS                                        -->
+  <!-- ================================================== -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet" />
+
+  <!-- ================================================== -->
+  <!-- BOOTSTRAP 5 CDN                                     -->
+  <!-- ================================================== -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- ================================================== -->
+  <!-- BOOTSTRAP ICONS                                     -->
+  <!-- ================================================== -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+  <!-- ================================================== -->
+  <!-- AOS ANIMATION                                       -->
+  <!-- ================================================== -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- ================================================== -->
+  <!-- SWIPER JS CSS                                       -->
+  <!-- ================================================== -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- ================================================== -->
+  <!-- CUSTOM CSS                                          -->
+  <!-- ================================================== -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ================================================== -->
+  <!-- LOADING SCREEN                                      -->
+  <!-- ================================================== -->
+  <div id="loading-screen">
+    <div class="loader-content">
+      <div class="loader-logo">
+        <img src="https://desabojanegara.wordpress.com/wp-content/uploads/2020/11/banjarnegara-smal.png?w=109" alt="Logo Desa" class="loader-logo-img" />
+      </div>
+      <div class="loader-text">Desa Bojanegara</div>
+      <div class="loader-bar"><div class="loader-progress"></div></div>
+      <div class="loader-subtitle">Memuat halaman...</div>
+    </div>
+  </div>
+
+  <!-- ================================================== -->
+  <!-- NAVBAR                                              -->
+  <!-- ================================================== -->
+  <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top navbar-glass">
+    <div class="container">
+      <!-- Brand / Logo -->
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#beranda">
+        <div class="brand-icon">
+          <img src="https://desabojanegara.wordpress.com/wp-content/uploads/2020/11/banjarnegara-smal.png?w=109" alt="Logo Desa" class="brand-logo-img" />
+        </div>
+        <span class="brand-name">Desa <span class="brand-accent">Bojanegara</span></span>
+      </a>
+
+      <!-- Hamburger Toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="hamburger-icon"><span></span><span></span><span></span></span>
+      </button>
+
+      <!-- Nav Menu -->
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-1">
+          <li class="nav-item"><a class="nav-link nav-item-link" href="#beranda">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link nav-item-link" href="#profil">Profil Desa</a></li>
+          <li class="nav-item"><a class="nav-link nav-item-link" href="#struktur">Struktur</a></li>
+          <li class="nav-item"><a class="nav-link nav-item-link" href="#statistik">Statistik</a></li>
+          <li class="nav-item"><a class="nav-link nav-item-link" href="#umkm">UMKM</a></li>
+          <li class="nav-item"><a class="nav-link nav-item-link" href="#galeri">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link nav-item-link" href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================================================== -->
+  <!-- HERO SECTION                                        -->
+  <!-- ================================================== -->
+  <section id="beranda" class="hero-section">
+    <!-- Background Video -->
+    <div class="hero-video-wrap">
+      <video autoplay muted loop playsinline class="hero-video" id="heroVideo">
+        <!-- Fallback: gunakan video dari folder /video/desa.mp4 -->
+        <source src="video/desa.mp4" type="video/mp4" />
+      </video>
+      <!-- Fallback background jika video tidak tersedia -->
+      <div class="hero-video-fallback"></div>
+    </div>
+
+    <!-- Cinematic Overlay -->
+    <div class="hero-overlay"></div>
+
+    <!-- Hero Content -->
+    <div class="hero-content container">
+      <div class="hero-badge" data-aos="fade-down" data-aos-delay="200">
+        <i class="bi bi-geo-alt-fill"></i> Kec. Sigaluh, Kab. Banjarnegara, Jawa Tengah
+      </div>
+      <h1 class="hero-title" data-aos="fade-up" data-aos-delay="400">
+        Desa <span class="hero-accent">Bojanegara</span>
+      </h1>
+      <div class="hero-typing-wrap" data-aos="fade-up" data-aos-delay="600">
+        <span id="typingText" class="hero-typing"></span><span class="typing-cursor">|</span>
+      </div>
+      <p class="hero-desc" data-aos="fade-up" data-aos-delay="800">
+        Sebuah desa yang kaya akan budaya, alam yang indah, dan masyarakat yang gotong royong demi kemajuan bersama.
+      </p>
+      <div class="hero-actions" data-aos="fade-up" data-aos-delay="1000">
+        <a href="#profil" class="btn-hero-primary">
+          <i class="bi bi-compass"></i> Jelajahi Desa
+        </a>
+        <a href="#galeri" class="btn-hero-secondary">
+          <i class="bi bi-play-circle"></i> Lihat Galeri
+        </a>
+      </div>
+
+      <!-- Stats Row -->
+      <div class="hero-stats" data-aos="fade-up" data-aos-delay="1200">
+        <div class="hero-stat">
+          <div class="hero-stat-num">3.192</div>
+          <div class="hero-stat-lbl">Jiwa</div>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">3</div>
+          <div class="hero-stat-lbl">Dusun</div>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">24+</div>
+          <div class="hero-stat-lbl">UMKM</div>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">1952</div>
+          <div class="hero-stat-lbl">Berdiri</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ================================================== -->
+  <!-- WAVE DIVIDER                                        -->
+  <!-- ================================================== -->
+  <div class="wave-divider wave-top">
+    <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="var(--bg-dark)"/>
+    </svg>
+  </div>
+
+  <!-- ================================================== -->
+  <!-- PROFIL DESA SECTION                                 -->
+  <!-- ================================================== -->
+  <section id="profil" class="section-pad bg-dark-section">
+    <div class="container">
+      <!-- Section Header -->
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Tentang Kami</span>
+        <h2 class="section-title">Profil <span class="text-accent">Desa</span></h2>
+        <p class="section-sub">Mengenal lebih dekat Desa Bojanegara yang penuh sejarah dan potensi luar biasa.</p>
+      </div>
+
+      <!-- Sejarah -->
+      <div class="row align-items-center g-5 mb-5">
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="profil-img-wrap">
+            <img src="Foto_Video/Pemandangan.png" alt="Pemandangan Desa" class="profil-img" />
+            <div class="profil-img-badge">
+              <i class="bi bi-clock-history"></i>
+              <span>Sejak 1952</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="profil-text">
+            <h3 class="profil-heading">Sejarah Desa</h3>
+            <p>Desa Bojanegara didirikan pada tahun <strong>1952</strong> oleh sekelompok perintis yang berasal dari berbagai wilayah di Jawa Tengah. Nama "Bojanegara" berasal dari kata <em>boja</em> (tempat) dan <em>nagara</em> (kota), mencerminkan peran desa sebagai pusat pemerintahan dan kehidupan masyarakat.</p>
+            <p>Pada awal berdirinya, desa ini hanya dihuni oleh sekitar 50 kepala keluarga yang hidup dari pertanian tradisional. Seiring berjalannya waktu, Desa Bojanegara terus berkembang menjadi desa yang mandiri dan berdaya dengan berbagai potensi unggulan.</p>
+            <div class="sejarah-milestones">
+              <div class="milestone"><span class="milestone-year">1952</span><span class="milestone-desc">Berdirinya Desa</span></div>
+              <div class="milestone"><span class="milestone-year">1955</span><span class="milestone-desc">Pembangunan Balai Desa</span></div>
+              <div class="milestone"><span class="milestone-year">1982</span><span class="milestone-desc">Listrik Masuk Desa</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visi & Misi -->
+      <div class="row g-4 mb-5">
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="visi-misi-card visi-card">
+            <div class="vm-icon"><i class="bi bi-eye-fill"></i></div>
+            <h4>Visi Desa</h4>
+            <p>"Terwujudnya Desa Bojanegara yang <strong>MAJU, MANDIRI, dan SEJAHTERA</strong> Berdasarkan Pancasila dan Undang-Undang Dasar Tahun 1945."</p>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="visi-misi-card misi-card">
+            <div class="vm-icon"><i class="bi bi-list-check"></i></div>
+            <h4>Misi Desa</h4>
+            <ul class="misi-list">
+              <li><i class="bi bi-check-circle-fill"></i> Meningkatkan kualitas pelayanan publik yang prima</li>
+              <li><i class="bi bi-check-circle-fill"></i> Mengembangkan potensi ekonomi lokal dan UMKM</li>
+              <li><i class="bi bi-check-circle-fill"></i> Membangun infrastruktur desa yang berkualitas</li>
+              <li><i class="bi bi-check-circle-fill"></i> Meningkatkan SDM melalui pendidikan dan pelatihan</li>
+              <li><i class="bi bi-check-circle-fill"></i> Melestarikan lingkungan hidup dan budaya lokal</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Info Dasar + Peta -->
+      <div class="row g-4">
+        <div class="col-lg-5" data-aos="fade-right">
+          <div class="info-dasar-card">
+            <h4 class="info-dasar-title"><i class="bi bi-info-circle-fill"></i> Informasi Dasar</h4>
+            <ul class="info-list">
+              <li><span class="info-key">Nama Desa</span><span class="info-val">Bojanegara</span></li>
+              <li><span class="info-key">Kecamatan</span><span class="info-val">Sigaluh</span></li>
+              <li><span class="info-key">Kabupaten</span><span class="info-val">Banjarnegara</span></li>
+              <li><span class="info-key">Provinsi</span><span class="info-val">Jawa Tengah</span></li>
+              <li><span class="info-key">Kode Pos</span><span class="info-val">53481</span></li>
+              <li><span class="info-key">Luas Wilayah</span><span class="info-val">182 Hektar</span></li>
+              <li><span class="info-key">Jumlah Dusun</span><span class="info-val">3 Dusun</span></li>
+              <li><span class="info-key">Jumlah RT/RW</span><span class="info-val">18 RT / 3 RW</span></li>
+              <li><span class="info-key">Jumlah Penduduk</span><span class="info-val">3.192 Jiwa</span></li>
+              <li><span class="info-key">Kepala Keluarga</span><span class="info-val">791 KK</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-7" data-aos="fade-left">
+          <div class="peta-wrap">
+            <h4 class="peta-title"><i class="bi bi-geo-alt-fill"></i> Lokasi Desa</h4>
+            <div class="peta-embed">
+              <iframe
+                src="https://maps.google.com/maps?q=Desa%20Bojanegara%20Sigaluh%20Banjarnegara%20Jawa%20Tengah&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================== -->
+  <!-- WAVE DIVIDER                                        -->
+  <!-- ================================================== -->
+  <div class="wave-divider wave-mid">
+    <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,30 C480,60 960,0 1440,30 L1440,60 L0,60 Z" fill="var(--bg-darker)"/>
+    </svg>
+  </div>
+
+  <!-- ================================================== -->
+  <!-- STRUKTUR ORGANISASI SECTION                         -->
+  <!-- ================================================== -->
+  <section id="struktur" class="section-pad bg-darker-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Perangkat Desa</span>
+        <h2 class="section-title">Struktur <span class="text-accent">Organisasi</span></h2>
+        <p class="section-sub">Jajaran perangkat desa yang berdedikasi melayani masyarakat Desa Bojanegara .</p>
+      </div>
+
+      <!-- Kepala Desa - Row utama -->
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-3 col-md-5" data-aos="zoom-in">
+          <div class="org-card org-card-head">
+            <div class="org-glow"></div>
+            <div class="org-avatar-wrap">
+              <img src="https://desabojanegara.wordpress.com/wp-content/uploads/2019/02/img082-kades.jpg" alt="Kepala Desa" class="org-avatar" />
+              <div class="org-badge-icon"><i class="bi bi-star-fill"></i></div>
+            </div>
+            <div class="org-info">
+              <h5>Ahmat Yahya</h5>
+              <span class="org-role org-role-head">Kepala Desa</span>
+              <p class="org-period">Periode 2024 – 2028</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Connector line -->
+      <div class="org-connector" data-aos="fade-up"></div>
+
+      <!-- Sekretaris + Kaur -->
+      <div class="row justify-content-center g-4 mb-4">
+        <div class="col-lg-3 col-md-5" data-aos="fade-up" data-aos-delay="100">
+          <div class="org-card org-card-sekdes">
+            <div class="org-avatar-wrap">
+              <img src="https://desabojanegara.wordpress.com/wp-content/uploads/2019/02/img082-edi.jpg" alt="Sekretaris Desa" class="org-avatar" />
+            </div>
+            <div class="org-info">
+              <h5>Catur Edi Santoso</h5>
+              <span class="org-role org-role-sekdes">Sekretaris Desa</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-5" data-aos="fade-up" data-aos-delay="200">
+          <div class="org-card">
+            <div class="org-avatar-wrap">
+              <img src="https://desabojanegara.wordpress.com/wp-content/uploads/2019/02/img082-warso-6.jpg" alt="Kaur Keuangan" class="org-avatar" />
+            </div>
+            <div class="org-info">
+              <h5>Warso Rinekso</h5>
+              <span class="org-role">Kasi Kesejahteraan</span>
+              </div>
+              </div>
+        </div>
+        <div class="col-lg-3 col-md-5" data-aos="fade-up" data-aos-delay="300">
+          <div class="org-card">
+            <div class="org-avatar-wrap">
+              <img src="https://desabojanegara.wordpress.com/wp-content/uploads/2019/02/img082-copy-7.jpg" alt="Kaur Umum" class="org-avatar" />
+            </div>
+            <div class="org-info">
+              <h5>Kiroto Aji</h5>
+              <span class="org-role">Kasi Pelayanan</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Staff Desa -->
+      <div class="row justify-content-center g-4">
+        <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="org-card org-card-sm">
+            <div class="org-avatar-wrap">
+              <img src="https://desabojanegara.wordpress.com/wp-content/uploads/2019/02/img082-yanto-7.jpg?w=1250&h=" alt="Kasi Pemerintahan" class="org-avatar" />
+            </div>
+            <div class="org-info">
+              <h6>Riyanto</h6>
+              <span class="org-role org-role-sm">Kasi Pemerintahan</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="150">
+          <div class="org-card org-card-sm">
+            <div class="org-avatar-wrap">
+              <img src="https://desabojanegara.wordpress.com/wp-content/uploads/2019/02/img082-barjono.jpg" alt="Kasi Pelayanan" class="org-avatar" />
+            </div>
+            <div class="org-info">
+              <h6>Barjono</h6>
+              <span class="org-role org-role-sm">Kaur Umum Dan TU</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="org-card org-card-sm">
+            <div class="org-avatar-wrap">
+              <img src="https://ui-avatars.com/api/?name=Ihda+Mardiana&background=random" alt="Kasi Kesejahteraan" class="org-avatar" />
+            </div>
+            <div class="org-info">
+              <h6>Ihda Mardiana Hikmawati</h6>
+              <span class="org-role org-role-sm">Kaur Keuangan</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="250">
+          <div class="org-card org-card-sm">
+            <div class="org-avatar-wrap">
+              <img src="https://desabojanegara.wordpress.com/wp-content/uploads/2019/02/img082-subar.jpg" alt="Kaur Perencanaan" class="org-avatar" />
+            </div>
+            <div class="org-info">
+              <h6>Subar Kiyatno</h6>
+              <span class="org-role org-role-sm">Kaur Perencanaan</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="org-card org-card-sm">
+            <div class="org-avatar-wrap">
+              <img src="https://desabojanegara.wordpress.com/wp-content/uploads/2019/02/img082-kodam.jpg" alt="Kadus 01" class="org-avatar" />
+            </div>
+            <div class="org-info">
+              <h6>Ahmad Mukodam</h6>
+              <span class="org-role org-role-sm">Kadus 01</span>
+            </div>
+          </div>
+        </div>
+          <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="250">
+          <div class="org-card org-card-sm">
+            <div class="org-avatar-wrap">
+              <img src="https://desabojanegara.wordpress.com/wp-content/uploads/2019/02/img082-imam-7.jpg" alt="Kadus 02" class="org-avatar" />
+            </div>
+            <div class="org-info">
+              <h6>Imam Fatkhurohman</h6>
+              <span class="org-role org-role-sm">Kadus 02</span>
+            </div>
+          </div>
+        </div>
+         <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="org-card org-card-sm">
+            <div class="org-avatar-wrap">
+              <img src="https://desabojanegara.wordpress.com/wp-content/uploads/2019/02/img082-thoha-6.jpg" alt="Kadus 03" class="org-avatar" />
+            </div>
+            <div class="org-info">
+              <h6>Wikono</h6>
+              <span class="org-role org-role-sm">Kadus 03</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================== -->
+  <!-- STATISTIK PENDUDUK SECTION                          -->
+  <!-- ================================================== -->
+  <section id="statistik" class="section-pad bg-dark-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Data Kependudukan</span>
+        <h2 class="section-title">Statistik <span class="text-accent">Penduduk</span></h2>
+        <p class="section-sub">Data kependudukan Desa Bojanegara yang terus diperbarui setiap tahun.</p>
+      </div>
+
+      <!-- Counter Cards -->
+      <div class="row g-4 mb-5">
+        <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="0">
+          <div class="counter-card">
+            <div class="counter-icon" style="background: linear-gradient(135deg,#2d6a4f,#40916c)"><i class="bi bi-people-fill"></i></div>
+            <div class="counter-num" data-target="3192">0</div>
+            <div class="counter-lbl">Total Penduduk</div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="counter-card">
+            <div class="counter-icon" style="background: linear-gradient(135deg,#1b4332,#2d6a4f)"><i class="bi bi-gender-male"></i></div>
+            <div class="counter-num" data-target="1602">0</div>
+            <div class="counter-lbl">Laki-laki</div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+          <div class="counter-card">
+            <div class="counter-icon" style="background: linear-gradient(135deg,#52b788,#74c69d)"><i class="bi bi-gender-female"></i></div>
+            <div class="counter-num" data-target="1590">0</div>
+            <div class="counter-lbl">Perempuan</div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+          <div class="counter-card">
+            <div class="counter-icon" style="background: linear-gradient(135deg,#d4af37,#f0c040)"><i class="bi bi-house-heart-fill"></i></div>
+            <div class="counter-num" data-target="791">0</div>
+            <div class="counter-lbl">Kepala Keluarga</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Charts Row -->
+      <div class="row g-4">
+        <!-- Chart Usia -->
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="chart-card">
+            <h5 class="chart-title"><i class="bi bi-bar-chart-fill"></i> Berdasarkan Usia</h5>
+            <canvas id="chartUsia"></canvas>
+          </div>
+        </div>
+
+        <!-- Chart Pendidikan -->
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="chart-card">
+            <h5 class="chart-title"><i class="bi bi-mortarboard-fill"></i> Tingkat Pendidikan</h5>
+            <canvas id="chartPendidikan"></canvas>
+          </div>
+        </div>
+
+        <!-- Chart Pekerjaan -->
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="chart-card">
+            <h5 class="chart-title"><i class="bi bi-briefcase-fill"></i> Bidang Pekerjaan</h5>
+            <canvas id="chartPekerjaan"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <!-- Progress Bars -->
+      <div class="row g-4 mt-3">
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="progress-section-card">
+            <h5><i class="bi bi-mortarboard"></i> Detail Pendidikan</h5>
+            <div class="progress-item">
+              <div class="progress-label"><span>SD / Sederajat</span><span>32%</span></div>
+              <div class="progress-bar-wrap"><div class="progress-bar-fill" data-width="32" style="background:linear-gradient(90deg,#2d6a4f,#52b788)"></div></div>
+            </div>
+            <div class="progress-item">
+              <div class="progress-label"><span>SMP / Sederajat</span><span>28%</span></div>
+              <div class="progress-bar-wrap"><div class="progress-bar-fill" data-width="28" style="background:linear-gradient(90deg,#40916c,#74c69d)"></div></div>
+            </div>
+            <div class="progress-item">
+              <div class="progress-label"><span>SMA / Sederajat</span><span>25%</span></div>
+              <div class="progress-bar-wrap"><div class="progress-bar-fill" data-width="25" style="background:linear-gradient(90deg,#52b788,#95d5b2)"></div></div>
+            </div>
+            <div class="progress-item">
+              <div class="progress-label"><span>D3 / S1</span><span>12%</span></div>
+              <div class="progress-bar-wrap"><div class="progress-bar-fill" data-width="12" style="background:linear-gradient(90deg,#d4af37,#f0c040)"></div></div>
+            </div>
+            <div class="progress-item">
+              <div class="progress-label"><span>S2 / S3</span><span>3%</span></div>
+              <div class="progress-bar-wrap"><div class="progress-bar-fill" data-width="3" style="background:linear-gradient(90deg,#b5179e,#f72585)"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="progress-section-card">
+            <h5><i class="bi bi-tools"></i> Detail Pekerjaan</h5>
+            <div class="progress-item">
+              <div class="progress-label"><span>Petani / Buruh Tani</span><span>40%</span></div>
+              <div class="progress-bar-wrap"><div class="progress-bar-fill" data-width="40" style="background:linear-gradient(90deg,#2d6a4f,#52b788)"></div></div>
+            </div>
+            <div class="progress-item">
+              <div class="progress-label"><span>Wiraswasta / UMKM</span><span>25%</span></div>
+              <div class="progress-bar-wrap"><div class="progress-bar-fill" data-width="25" style="background:linear-gradient(90deg,#40916c,#74c69d)"></div></div>
+            </div>
+            <div class="progress-item">
+              <div class="progress-label"><span>PNS / TNI / Polri</span><span>9%</span></div>
+              <div class="progress-bar-wrap"><div class="progress-bar-fill" data-width="9" style="background:linear-gradient(90deg,#d4af37,#f0c040)"></div></div>
+            </div>
+            <div class="progress-item">
+              <div class="progress-label"><span>Karyawan Swasta</span><span>15%</span></div>
+              <div class="progress-bar-wrap"><div class="progress-bar-fill" data-width="15" style="background:linear-gradient(90deg,#52b788,#95d5b2)"></div></div>
+            </div>
+            <div class="progress-item">
+              <div class="progress-label"><span>Lainnya</span><span>11%</span></div>
+              <div class="progress-bar-wrap"><div class="progress-bar-fill" data-width="11" style="background:linear-gradient(90deg,#6c757d,#adb5bd)"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================== -->
+  <!-- UMKM SECTION                                        -->
+  <!-- ================================================== -->
+  <section id="umkm" class="section-pad bg-darker-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Ekonomi Lokal</span>
+        <h2 class="section-title">Informasi <span class="text-accent">UMKM</span></h2>
+        <p class="section-sub">Produk dan usaha unggulan yang menjadi kebanggaan Desa Sukamaju.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- UMKM 1 -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+          <div class="umkm-card">
+            <div class="umkm-img-wrap">
+              <img src="https://cdns.klimg.com/resized/800x400/p/headline/opak-singkong-enak-di-bogor-kini-bisa-d-77604e.jpg" alt="Opak Singkong-Peyek-Rengginang" class="umkm-img" />
+              <div class="umkm-category">Kuliner</div>
+            </div>
+            <div class="umkm-body">
+              <h5>Opak Singkong-Peyek-Rengginang</h5>
+              <p>Opak singkong khas Desa Bojanegara dengan berbagai varian rasa, dibuat dari bahan alami tanpa pengawet.</p>
+               <p>Peyek khas Desa Bojanegara dengan berbagai varian rasa, dibuat dari bahan alami tanpa pengawet.</p>
+                <p>Rengginang khas Desa Bojanegara dengan berbagai varian rasa, dibuat dari bahan alami tanpa pengawet.</p>
+              <div class="umkm-owner"><i class="bi bi-person-fill"></i> Kelompok Wanita Tani</div>
+              <div class="umkm-contact">
+                <a href="tel:+628562616447" class="umkm-btn"><i class="bi bi-telephone"></i> 0856-2616-447</a>
+                <a href="https://wa.me/628562616447" class="umkm-btn umkm-btn-wa"><i class="bi bi-whatsapp"></i> WA</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- UMKM 2 -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="umkm-card">
+            <div class="umkm-img-wrap">
+              <img src="https://fitinline.com/data/article/20170518/Manfaat-Tas-Kanvas-001.jpg" alt="Tas" class="umkm-img" />
+              <div class="umkm-category">Kerajinan</div>
+            </div>
+            <div class="umkm-body">
+              <h5>Tas Kanvas Lokal Desa Bojanegara</h5>
+              <p>Tas kanvas yang dibuat dari bahan alami, dengan desain unik yang mencerminkan budaya lokal.</p>
+              <div class="umkm-owner"><i class="bi bi-person-fill"></i> Ibu Rati</div>
+              <div class="umkm-contact">
+                <a href="tel:+6281234567891" class="umkm-btn"><i class="bi bi-telephone"></i> 0812-3456-7891</a>
+                <a href="https://wa.me/6281234567891" class="umkm-btn umkm-btn-wa"><i class="bi bi-whatsapp"></i> WA</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- UMKM 3 -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="umkm-card">
+            <div class="umkm-img-wrap">
+              <img src="https://static.wixstatic.com/media/nsplsh_8db0116dbe7f4ca89215b696d4c3b94d~mv2.jpg/v1/fill/w_1000,h_668,al_c,q_85,usm_0.66_1.00_0.01/nsplsh_8db0116dbe7f4ca89215b696d4c3b94d~mv2.jpg" alt="Kopi Desa" class="umkm-img" />
+              <div class="umkm-category">Perkebunan</div>
+            </div>
+            <div class="umkm-body">
+              <h5>Kopi Robusta Bojanegara</h5>
+              <p>Kopi robusta premium dari kebun warga desa dengan cita rasa khas pegunungan yang autentik.</p>
+              <div class="umkm-owner"><i class="bi bi-person-fill"></i> Pak Hasan Basri</div>
+              <div class="umkm-contact">
+                <a href="tel:+6281234567892" class="umkm-btn"><i class="bi bi-telephone"></i> 0812-3456-7892</a>
+                <a href="https://wa.me/6281234567892" class="umkm-btn umkm-btn-wa"><i class="bi bi-whatsapp"></i> WA</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- UMKM 4 -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+          <div class="umkm-card">
+            <div class="umkm-img-wrap">
+              <img src="https://i0.wp.com/starfarm.co.id/wp-content/uploads/2020/09/budidaya-tanaman-hias-star-farm.jpg?fit=633%2C387&ssl=1" alt="Pembibitan Tanaman" class="umkm-img" />
+              <div class="umkm-category">Pertanian</div>
+            </div>
+            <div class="umkm-body">
+              <h5>Pembibitan Tanaman Bojanegara</h5>
+              <p>Benih dan tanaman hias berkualitas tinggi yang ditanam menggunakan metode pertanian ramah lingkungan.</p>
+              <div class="umkm-owner"><i class="bi bi-person-fill"></i> Kelompok Wanita Tani</div>
+              <div class="umkm-contact">
+                <a href="tel:+6285877977911" class="umkm-btn"><i class="bi bi-telephone"></i> 0858-7797-7911</a>
+                <a href="https://wa.me/6285877977911" class="umkm-btn umkm-btn-wa"><i class="bi bi-whatsapp"></i> WA</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- UMKM 5 -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="umkm-card">
+            <div class="umkm-img-wrap">
+              <img src="data:image/jpeg;base64,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" alt="Tempe Kedelai" class="umkm-img" />
+              <div class="umkm-category">Pangan</div>
+            </div>
+            <div class="umkm-body">
+              <h5>Tempe & Tahu Tradisional</h5>
+              <p>Tempe dan tahu homemade dengan kedelai pilihan, dibuat secara tradisional dan higienis setiap hari.</p>
+              <div class="umkm-owner"><i class="bi bi-person-fill"></i> Pak Slamet Riyadi</div>
+              <div class="umkm-contact">
+                <a href="tel:+6281234567894" class="umkm-btn"><i class="bi bi-telephone"></i> 0812-3456-7894</a>
+                <a href="https://wa.me/6281234567894" class="umkm-btn umkm-btn-wa"><i class="bi bi-whatsapp"></i> WA</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- UMKM 6 -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="umkm-card">
+            <div class="umkm-img-wrap">
+              <img src="https://hobiternak.com/wp-content/uploads/2026/03/Mari-Kita-Analisis-Ternak-Bebek-Petelur-100-Ekor-2.png" alt="Peternakan Bebek" class="umkm-img" />
+              <div class="umkm-category">Peternakan</div>
+            </div>
+            <div class="umkm-body">
+              <h5>Peternakan Bebek Bojanegara</h5>
+              <p>Bebek hasil ternak lokal dengan daging yang lembut dan ras yang khas, dipelihara secara alami.</p>
+              <div class="umkm-owner"><i class="bi bi-person-fill"></i> Badan Usaha Milik Desa</div>
+              <div class="umkm-contact">
+                <a href="tel:+6285227251092" class="umkm-btn"><i class="bi bi-telephone"></i> 0852-2725-1092</a>
+                <a href="https://wa.me/6285227251092" class="umkm-btn umkm-btn-wa"><i class="bi bi-whatsapp"></i> WA</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================== -->
+  <!-- GALERI SECTION                                      -->
+  <!-- ================================================== -->
+  <section id="galeri" class="section-pad bg-dark-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Dokumentasi</span>
+        <h2 class="section-title">Galeri <span class="text-accent">Desa</span></h2>
+        <p class="section-sub">Potret keindahan alam, budaya, dan kehidupan masyarakat Desa Bojanegara.</p>
+      </div>
+
+      <!-- Swiper Gallery -->
+      <div class="swiper gallerySwiper" data-aos="fade-up">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="gallery-slide" data-img="Foto_Video/Sawah.png">
+              <img src="Foto_Video/Sawah.png" alt="Sawah Desa" />
+              <div class="gallery-overlay"><span>Sawah Desa</span></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="gallery-slide" data-img="Foto_Video/IMG-20260119-WA0030.jpg">
+              <img src="Foto_Video/IMG-20260119-WA0030.jpg" alt="Kegiatan Warga" />
+              <div class="gallery-overlay"><span>Kegiatan Warga</span></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="gallery-slide" data-img="Foto_Video/IMG-20260524-WA0003.jpg">
+              <img src="Foto_Video/IMG-20260524-WA0003.jpg" alt="Kegiatan Posyandu" />
+              <div class="gallery-overlay"><span>Kegiatan Posyandu</span></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="gallery-slide" data-img="https://i.ytimg.com/vi/xPloWp3uz7Y/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCELQNDJP9O7vRH9Y18hc4XGyUtWw">
+              <img src="https://i.ytimg.com/vi/xPloWp3uz7Y/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCELQNDJP9O7vRH9Y18hc4XGyUtWw" alt="Budaya Lokal" />
+              <div class="gallery-overlay"><span>Budaya Lokal</span></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="gallery-slide" data-img="Foto_Video/Pegunungan.png">
+              <img src="Foto_Video/Pegunungan.png" alt="Gunung Sekitar Desa" />
+              <div class="gallery-overlay"><span>Gunung Sekitar Desa</span></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="gallery-slide" data-img="https://indomgb.s3.amazonaws.com/wp-content/uploads/2026/03/12074724/Kebun-duku-dan-durian-di-wilayah-Komering-Kabupaten-OKU-Timur-Sumatera-Selatan-yang-tidak-menghasilkan-pada-2026-ini.-Foto-Taufik-Wijaya-Mongabay-Indonesia.jpg">
+              <img src="https://indomgb.s3.amazonaws.com/wp-content/uploads/2026/03/12074724/Kebun-duku-dan-durian-di-wilayah-Komering-Kabupaten-OKU-Timur-Sumatera-Selatan-yang-tidak-menghasilkan-pada-2026-ini.-Foto-Taufik-Wijaya-Mongabay-Indonesia.jpg" alt="Hutan Desa" />
+              <div class="gallery-overlay"><span>Hutan Desa</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next gallery-nav"></div>
+        <div class="swiper-button-prev gallery-nav"></div>
+        <div class="swiper-pagination gallery-pag"></div>
+      </div>
+
+      <!-- Lightbox Modal -->
+      <div id="lightbox" class="lightbox-overlay" onclick="closeLightbox()">
+        <div class="lightbox-close" onclick="closeLightbox()"><i class="bi bi-x-lg"></i></div>
+        <img id="lightboxImg" src="" alt="" class="lightbox-img" onclick="event.stopPropagation()" />
+      </div>
+
+      <!-- Video Desa -->
+      <div class="mt-5" data-aos="fade-up">
+        <h4 class="gallery-sub-title"><i class="bi bi-play-circle-fill"></i> Video Profil PKK Desa</h4>
+        <div class="video-wrap">
+          <iframe
+            src="Foto_Video/VIDEO PROFIL PKK VERSI WA.mp4"
+            title="Video Profil PKK Desa Bojanegara"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================== -->
+  <!-- KONTAK SECTION                                      -->
+  <!-- ================================================== -->
+  <section id="kontak" class="section-pad bg-darker-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-badge">Hubungi Kami</span>
+        <h2 class="section-title">Kontak & <span class="text-accent">Pengaduan</span></h2>
+        <p class="section-sub">Sampaikan pertanyaan, saran, atau pengaduan Anda kepada perangkat Desa Bojanegara.</p>
+      </div>
+
+      <div class="row g-5">
+        <!-- Info Kontak -->
+        <div class="col-lg-5" data-aos="fade-right">
+          <div class="kontak-info-card">
+            <h4 class="kontak-info-title">Informasi Kontak</h4>
+            <ul class="kontak-list">
+              <li>
+                <div class="kontak-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                <div>
+                  <strong>Alamat</strong><br>
+                  Jl. Raya Banjarnegara-Wonosobo KM 15, Kec. Sigaluh,<br>Kab. Banjarnegara, Jawa Tengah 53481
+                </div>
+              </li>
+              <li>
+                <div class="kontak-icon"><i class="bi bi-telephone-fill"></i></div>
+                <div>
+                  <strong>Telepon</strong><br>
+                  <a href="tel:+62286123456">(0286) 123-456</a>
+                </div>
+              </li>
+              <li>
+                <div class="kontak-icon"><i class="bi bi-envelope-fill"></i></div>
+                <div>
+                  <strong>Email</strong><br>
+                  <a href="mailto:desabojanegara@gmail.com">desabojanegara@gmail.com</a>
+                </div>
+              </li>
+              <li>
+                <div class="kontak-icon"><i class="bi bi-clock-fill"></i></div>
+                <div>
+                  <strong>Jam Pelayanan</strong><br>
+                  Senin – Jumat: 08.00 – 15.00 WIB<br>
+                  Sabtu – Minggu: Tutup            
+                </div>
+              </li>
+            </ul>
+
+            <!-- Sosial Media -->
+            <div class="kontak-sosmed">
+              <h6>Ikuti Kami:</h6>
+              <div class="sosmed-icons">
+                <a href="#" class="sosmed-btn" title="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="sosmed-btn" title="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="sosmed-btn" title="YouTube"><i class="bi bi-youtube"></i></a>
+                <a href="#" class="sosmed-btn" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Kontak -->
+        <div class="col-lg-7" data-aos="fade-left">
+          <div class="form-card">
+            <h4 class="form-card-title"><i class="bi bi-send-fill"></i> Kirim Pesan / Pengaduan</h4>
+            <form id="kontakForm" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="form-group-modern">
+                    <label for="nama">Nama Lengkap <span class="required">*</span></label>
+                    <div class="input-icon-wrap">
+                      <i class="bi bi-person"></i>
+                      <input type="text" id="nama" class="form-control-modern" placeholder="Masukkan nama lengkap" required />
+                    </div>
+                    <div class="error-msg" id="namaError">Nama wajib diisi</div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group-modern">
+                    <label for="email">Email <span class="required">*</span></label>
+                    <div class="input-icon-wrap">
+                      <i class="bi bi-envelope"></i>
+                      <input type="email" id="email" class="form-control-modern" placeholder="Masukkan email" required />
+                    </div>
+                    <div class="error-msg" id="emailError">Email tidak valid</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group-modern">
+                    <label for="telepon">Nomor Telepon</label>
+                    <div class="input-icon-wrap">
+                      <i class="bi bi-telephone"></i>
+                      <input type="tel" id="telepon" class="form-control-modern" placeholder="Masukkan nomor telepon (opsional)" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group-modern">
+                    <label for="jenis">Jenis Pesan <span class="required">*</span></label>
+                    <div class="input-icon-wrap">
+                      <i class="bi bi-tag"></i>
+                      <select id="jenis" class="form-control-modern" required>
+                        <option value="">-- Pilih Jenis Pesan --</option>
+                        <option value="pertanyaan">Pertanyaan</option>
+                        <option value="saran">Saran & Masukan</option>
+                        <option value="pengaduan">Pengaduan</option>
+                        <option value="permohonan">Permohonan Layanan</option>
+                        <option value="lainnya">Lainnya</option>
+                      </select>
+                    </div>
+                    <div class="error-msg" id="jenisError">Jenis pesan wajib dipilih</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group-modern">
+                    <label for="pesan">Pesan / Pengaduan <span class="required">*</span></label>
+                    <div class="input-icon-wrap textarea-wrap">
+                      <i class="bi bi-chat-text"></i>
+                      <textarea id="pesan" class="form-control-modern" rows="5" placeholder="Tulis pesan atau pengaduan Anda di sini..." required></textarea>
+                    </div>
+                    <div class="error-msg" id="pesanError">Pesan wajib diisi (minimal 10 karakter)</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn-submit-form" id="submitBtn">
+                    <span class="btn-text"><i class="bi bi-send"></i> Kirim Pesan</span>
+                    <span class="btn-loading" style="display:none"><i class="bi bi-arrow-repeat spin"></i> Mengirim...</span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================== -->
+  <!-- FOOTER                                              -->
+  <!-- ================================================== -->
+  <footer class="main-footer">
+    <div class="footer-wave">
+      <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,40 C360,80 1080,0 1440,40 L1440,0 L0,0 Z" fill="var(--bg-darker)"/>
+      </svg>
+    </div>
+    <div class="container">
+      <div class="row g-4 pt-4">
+        <!-- Brand -->
+        <div class="col-lg-4">
+          <div class="footer-brand">
+            <div class="footer-logo"><i class="bi bi-tree-fill"></i></div>
+            <h4>Desa Bojanegara</h4>
+            <p>Desa Modern Mandiri Berdaya. Bersama membangun desa yang maju, sejahtera, dan berkelanjutan untuk generasi mendatang.</p>
+            <div class="footer-sosmed">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-youtube"></i></a>
+              <a href="#"><i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigasi Cepat -->
+        <div class="col-lg-2 col-md-4">
+          <h6 class="footer-heading">Navigasi</h6>
+          <ul class="footer-links">
+            <li><a href="#beranda"><i class="bi bi-chevron-right"></i> Beranda</a></li>
+            <li><a href="#profil"><i class="bi bi-chevron-right"></i> Profil Desa</a></li>
+            <li><a href="#struktur"><i class="bi bi-chevron-right"></i> Struktur</a></li>
+            <li><a href="#statistik"><i class="bi bi-chevron-right"></i> Statistik</a></li>
+            <li><a href="#umkm"><i class="bi bi-chevron-right"></i> UMKM</a></li>
+            <li><a href="#galeri"><i class="bi bi-chevron-right"></i> Galeri</a></li>
+            <li><a href="#kontak"><i class="bi bi-chevron-right"></i> Kontak</a></li>
+          </ul>
+        </div>
+
+        <!-- Layanan -->
+        <div class="col-lg-3 col-md-4">
+          <h6 class="footer-heading">Layanan Desa</h6>
+          <ul class="footer-links">
+            <li><a href="#"><i class="bi bi-chevron-right"></i> Surat Keterangan</a></li>
+            <li><a href="#"><i class="bi bi-chevron-right"></i> Surat Domisili</a></li>
+            <li><a href="#"><i class="bi bi-chevron-right"></i> Pengantar SKCK</a></li>
+            <li><a href="#"><i class="bi bi-chevron-right"></i> Surat Usaha</a></li>
+            <li><a href="#"><i class="bi bi-chevron-right"></i> Info Bantuan Sosial</a></li>
+          </ul>
+        </div>
+
+        <!-- Kontak Singkat -->
+        <div class="col-lg-3 col-md-4">
+          <h6 class="footer-heading">Kontak</h6>
+          <ul class="footer-contact-list">
+            <li><i class="bi bi-geo-alt-fill"></i> Kec. Sigaluh, Kab. Banjarnegara, Jateng</li>
+            <li><i class="bi bi-telephone-fill"></i> (0286) 123-456</li>
+            <li><i class="bi bi-envelope-fill"></i> desabojanegara@gmail.com</li>
+            <li><i class="bi bi-clock-fill"></i> Senin–Jumat: 08.00–15.00</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="footer-divider" />
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Desa Bojanegara. Hak Cipta Dilindungi.</p>
+        <p>Dibuat dengan <i class="bi bi-heart-fill text-accent"></i> oleh <strong>Siswa SMK Negeri 1 Bawang</strong></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================================================== -->
+  <!-- BACK TO TOP BUTTON                                  -->
+  <!-- ================================================== -->
+  <button id="backToTop" class="back-to-top" title="Kembali ke atas">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- ================================================== -->
+  <!-- SCRIPTS                                             -->
+  <!-- ================================================== -->
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS Animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- SwiperJS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+  <!-- SweetAlert2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
